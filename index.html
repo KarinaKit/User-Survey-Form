@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11.9 Практическая работа (Задача 1)</title>
+    <style>
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .input__name {
+            display: flex;
+            gap: 10px;
+        }
+
+        .fame {
+            display: flex;
+            gap: 12px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2 class="titele">Форма опраса</h2>
+
+    <form action="#" class="form">
+        <label class="input__name">
+            <span>Имя пользователя:</span><input type="name" name="name" minlength="3" class="input name" required>
+        </label>
+        <label>
+            <span>Email:</span> <input type="email" name="email" minlength="10" class="input email" required>
+        </label>
+
+        <label class="fame">
+            <span class="text">Пол:</span>
+            <input type="radio" class="input" name="gender" value="Мужской" required>Мужской
+            <input type="radio" class="input" name="gender" value="Женский" required>Женский
+        </label>
+
+        <label class="input__range">
+            Оценка сервиса: <input type="range" name="range" class="input" oninput="ratingValue.value = this.value" min="0" max="10" value="0" required>
+            <output id="ratingValue">0</output>
+        </label>
+
+        <span class="hobbies">Интересы пользователя:</span>
+        <label class="check">
+            <input type="checkbox" name="hobbies" class="input check__hobbi sport" value="Спорт"><span>Спорт</span>
+        </label>
+        <label>
+            <input type="checkbox" name="hobbies" class="input check__hobbi music" value="Музыка"><span>Музыка</span>
+        </label>
+        <label>
+            <input type="checkbox" name="hobbies" class="input check__hobbi travel" value="Путешествия"><span>Путешествие</span>
+        </label>
+        <label>
+            <input type="checkbox" name="hobbies" class="input check__hobbi movie" value="Кино"><span>Кино</span>
+        </label>
+
+        <span class="text__comment">Дополнительный комментарий</span>
+        <label class="comm">
+            <textarea class="input" name="comment" id="comment" rows="5" cols="40" required></textarea>
+        </label>
+
+        <label>
+            <button class="button">Отправить</button>
+        </label>
+    </form>
+
+    <div class="form__result"></div>
+    <script src="index.js"></script>
+</body>
+</html>
