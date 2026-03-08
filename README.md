@@ -40,6 +40,8 @@
 
 - Или используйте расширение Live Server в VS Code для мгновенного просмотра.
 
+🔗Ссылка: [https://karinakit.github.io/-User-Survey-Form/]
+
 📎 ![Скриншот интерфейса](./img/form.png)
 
 
