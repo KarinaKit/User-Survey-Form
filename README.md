@@ -34,7 +34,7 @@
 
 📦 Как запустить проект:
 
-🔗Ссылка: [https://karinakit.github.io/-User-Survey-Form/]
+🔗Ссылка: [https://karinakit.github.io/User-Survey-Form/]
 
 📎 ![Скриншот интерфейса](./img/form.png)
 
